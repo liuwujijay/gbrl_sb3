@@ -1,0 +1,28 @@
+# ──────────────────────────────────────────────────────────────────────────────
+# Minimum requirements to run notebooks/awr_offline_example.py
+# Tested on Python 3.10 (macOS arm64 / Linux x86-64)
+# ──────────────────────────────────────────────────────────────────────────────
+
+# ── Core RL / GBRL stack ──────────────────────────────────────────────────────
+gbrl>=1.1.6
+stable-baselines3==2.1.0
+gymnasium==0.29.1
+
+# ── Deep learning ─────────────────────────────────────────────────────────────
+torch>=2.0.0,<2.2.0
+
+# ── Numerics ──────────────────────────────────────────────────────────────────
+numpy>=1.21,<1.25
+
+# ── Data / ML ─────────────────────────────────────────────────────────────────
+pandas>=2.0.0
+scikit-learn>=1.3.0
+lightgbm>=4.0.0
+
+# ── Parquet support (optional — needed only for local/S3 Parquet files) ───────
+pyarrow>=14.0.0
+
+# ── S3 streaming (optional — needed only for --s3-uris) ──────────────────────
+s3fs>=2023.9.0
+fsspec>=2023.9.0
+boto3>=1.28.0
